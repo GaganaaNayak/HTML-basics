@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="yes">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+	body {
+	  font-family: Arial, sans-serif;
+	  background-color: #f4f4f4;
+	  margin: 20px;
+	}
+	h1 {
+	  text-align: center;
+	  color: #333;
+	  font-size: 32px;
+	  margin-bottom: 20px;
+	}
+	table {
+	  width:60%;
+	  margin:0 auto;
+	  background-color: #fff;
+	  border-collapse:collapse;
+	  border-shadow:0 0 10px rgba(0,0,0,0.1);
+	}
+	td {
+	  padding:15px;
+	  font-size:18px;
+	  color:#555;
+	}
+	th {
+	  text-align:left;
+	  padding:15px;
+	  background-color:#4CAF50;
+	  color:white;
+	  font-size:20px;
+	}
+	input[type="text"],input[type="email"],input[type="password"], select, textarea {
+	  width:95%;
+	  padding:10px;
+	  font-size:16px;
+	  border-radius:4px;
+	}
+	select {
+	  width:99%;
+	}
+	input[type="submit"], input[type="reset"] {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 10px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 18px;
+	}
+	input[type="submit"]:hover,input[type="rest"]{
+	  background-color:#45a049;
+	}
+	text area {
+	 resize:vertical;
+	 height:100px;
+	}
+	redio.checkbox {
+	  width:auto;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>Registration Form</h1>
+	<form action="#" method="post">
+	<table>
+	  <tr>
+		<th colspan="2">Varnothsava</th>
+	  </tr>
+	  <tr>
+		<td>First Name :</td>
+		<td><input type="text" name="name" placeholder="Enter your name"></td>
+	  </tr>
+	  <tr>
+		<td>USN :</td>
+		<td><input type="text" name="usn" placeholder="Enter your USN"></td>
+	  </tr>	 
+	  <tr>
+		<td>Email :</td>
+		<td><input type="email" name="email" placeholder="Enter your college email ID"></td>
+	  </tr> 
+	  <tr>
+		<td>Gender :</td>
+		<td><input type="radio" name="year" value="first" class="radio">1st year
+		    <input type="radio" name="year" value="second" class="radio">2nd year
+		    <input type="radio" name="year" value="third" class="radio">3rd year
+		    <input type="radio" name="year" value="fourth" class="radio">4th year
+		</td>
+	  </tr>
+	  <tr>
+		<td>Select Event :</td>
+		<td><select name="country">
+		    <option value="dance"> Group Dance</option>
+		    <option value="essay">Essay</option>
+		    <option value="poster">Poster Making</option>
+		    <option value="collage">Collage Making</option>
+		    </select>
+		</td>
+	  </tr>
+	  <tr>
+		<td>Events interested to participate :</td>
+		<td><input type="checkbox" name="events" value="dance" class="checkbox">Group Dance
+		    <input type="checkbox" name="events" value="essay" class="checkbox">Essay writing
+		    <input type="checkbox" name="events" value="poster" class="checkbox">Poster Making
+		    <input type="checkbox" name="events" value="collage" class="checkbox">Collage Making
+		</td>
+	  </tr>
+	  <tr>
+		<td>Members :</td>
+		<td><textarea name="address" placeholder="Enter name and USN of the members "></textarea></td>
+	  </tr>
+	  <tr>
+		<td colspan="2" style="text-align:center">
+		<input type="submit" value="Register">
+		<input type="reset" value="Reset">
+		</td>
+	  </tr>
+	</table>
+     </form>
+  </body>
+</html>
+
